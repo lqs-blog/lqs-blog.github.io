@@ -1113,21 +1113,25 @@ function changeMouseMode() {
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("08/09/2022 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("20/05/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到Fomalhaut🥝の小家!`,
+    `欢迎来到CODERYEAH🍉の小家!`,
     `Future is now 🍭🍭🍭`,
     `
         
-███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
-██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
-██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
-██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
+
+   ____   U  ___ u  ____  U _____ u   ____     __   __U _____ u    _       _   _   
+U /"___|   \/"_ \/ |  _"\ \| ___"|/U |  _"\ u  \ \ / /\| ___"|/U  /"\  u  |'| |'|  
+\| | u     | | | |/| | | | |  _|"   \| |_) |/   \ V /  |  _|"   \/ _ \/  /| |_| |\ 
+ | |/__.-,_| |_| |U| |_| |\| |___    |  _ <    U_|"|_u | |___   / ___ \  U|  _  |u 
+  \____|\_)-\___/  |____/ u|_____|   |_| \_\     |_|   |_____| /_/   \_\  |_| |_|  
+ _// \\      \\     |||_   <<   >>   //   \\_.-,//|(_  <<   >>  \\    >>  //   \\  
+(__)(__)    (__)   (__)_) (__) (__) (__)  (__)\_) (__)(__) (__)(__)  (__)(_") ("_) 
+
                                               
 `,
     "小站已经苟活",
@@ -1172,7 +1176,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
+      "%c ⚡ Powered by Coderyeah🍉 %c 你正在访问Coderyeah🍉の小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -2789,7 +2793,7 @@ function createtime() {
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("08/09/2022 00:00:00");
+  var grt = new Date("20/05/2025 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -3190,8 +3194,8 @@ function changeBg(s) {
 // 设置背景属性  default_cover_178.webp (251,42,45,138)
 function setBg(s) { 
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_192.webp);
-    --darkmode-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_143.webp);
+    --default-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_143.webp);
+    --darkmode-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_138.webp);
     --mobileday-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_127.webp);
     --mobilenight-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_109.webp);
   }`;
@@ -3407,7 +3411,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_143.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_143.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_138.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_138.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_127.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_127.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_109.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_109.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_251.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_251.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_42.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_42.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_45.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_45.webp)')"></a></div>
               </div>
             </details>
 
