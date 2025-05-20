@@ -3187,13 +3187,13 @@ function changeBg(s) {
   setBg(s);
   localStorage.setItem("blogbg", s);
 }
-// 设置背景属性
-function setBg(s) {
+// 设置背景属性  default_cover_178.webp (251,42,45,138)
+function setBg(s) { 
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: ${s};
-    --darkmode-bg: ${s};
-    --mobileday-bg: ${s};
-    --mobilenight-bg: ${s};
+    --default-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_192.webp);
+    --darkmode-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_143.webp);
+    --mobileday-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_127.webp);
+    --mobilenight-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_109.webp);
   }`;
 }
 
