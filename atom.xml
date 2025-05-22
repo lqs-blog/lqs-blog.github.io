@@ -3,11 +3,11 @@
   <title>Coderyeah🍉</title>
   
   
-  <link href="https://www.fomal.cc/atom.xml" rel="self"/>
+  <link href="https://www.coderyeah.website/atom.xml" rel="self"/>
   
-  <link href="https://www.fomal.cc/"/>
+  <link href="https://www.coderyeah.website/"/>
   <updated>2025-05-20T08:50:31.323Z</updated>
-  <id>https://www.fomal.cc/</id>
+  <id>https://www.coderyeah.website/</id>
   
   <author>
     <name>Coderyeah🍉</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>自定义注解实现系统启动时后端权限数据生成</title>
-    <link href="https://www.fomal.cc/posts/c5539480.html"/>
-    <id>https://www.fomal.cc/posts/c5539480.html</id>
+    <link href="https://www.coderyeah.website/posts/c5539480.html"/>
+    <id>https://www.coderyeah.website/posts/c5539480.html</id>
     <published>2025-05-20T08:38:30.658Z</published>
     <updated>2025-05-20T08:50:31.323Z</updated>
     
@@ -44,18 +44,23 @@
   
   <entry>
     <title>正则表达式</title>
-    <link href="https://www.fomal.cc/posts/46563.html"/>
-    <id>https://www.fomal.cc/posts/46563.html</id>
+    <link href="https://www.coderyeah.website/posts/46563.html"/>
+    <id>https://www.coderyeah.website/posts/46563.html</id>
     <published>2025-05-20T08:38:30.655Z</published>
     <updated>2022-07-20T03:06:31.523Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="一-简介-happy"><a href="#一-简介-happy" class="headerlink" title="一. 简介:happy:"></a>一. 简介:happy:</h3><ol><li><p>? 通配符匹配文件名中的 0 个或 1 个字符，而 * 通配符匹配零个或多个字符。</p></li><li><p>正则表达式在线测试工具：(<a href="https://c.runoob.com/front-end/854/">https://c.runoob.com/front-end/854/</a>)</p></li><li><p>例子：像 <code>data(\w)?\.dat</code> 这样的模式将查找下列文件：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data.dat</span><br><span class="line">data1.dat</span><br><span class="line">data2.dat</span><br><span class="line">datax.dat</span><br><span class="line">dataN.dat</span><br></pre></td></tr></table></figure></li><li><p><img src="https://raw.githubusercontent.com/lqs-blog/picgo/main/img/20220715155152.png" alt="image-20220715155152077"></p><ul><li><code>^</code> 为匹配输入字符串的开始位置。</li><li><code>[0-9]+</code>匹配多个数字， <code>[0-9]</code> 匹配单个数字，<code>+</code> 匹配一个或者多个。</li><li><code>abc$</code>匹配字母 <code>abc</code> 并以 <code>abc</code> 结尾，<code>$</code> 为匹配输入字符串的结束位置。</li></ul></li><li><p>例子①：我们在写用户注册表单时，只允许用户名包含字符、数字、下划线和连接字符 -，并设置用户名的长度，我们就可以使用以下正则表达式来设定。（<code>^[a-z0-9_-]&#123;3,20&#125;$</code>）</p><p><img src="https://raw.githubusercontent.com/lqs-blog/picgo/main/img/20220715160155.png" alt="image-20220715160155236" style="zoom: 50%;" /></p></li><li><p>例子②</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;123abc&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt1 = <span class="regexp">/^[0-9]+abc$/</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt1));</span><br></pre></td></tr></table></figure><p>匹配结果是：<code>123.abc</code></p></li></ol><h3 id="二-语法"><a href="#二-语法" class="headerlink" title="二. 语法"></a>二. 语法</h3><ol><li><p>正则表达式(regular expression)描述了一种字符串匹配的模式（pattern），可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。</p></li><li><p><code>runoo+b</code>，可以匹配 <strong><code>runoob</code>、<code>runooob</code>、<code>runoooooob</code></strong> 等，+ 号代表前面的字符必须至少出现一次（1次或多次）。</p></li><li><p><code>runoo*b</code>，可以匹配 <strong><code>runob</code>、<code>runoob</code>、<code>runoooooob</code></strong> 等，* 号代表前面的字符可以不出现，也可以出现一次或者多次（0次、或1次、或多次）。</p></li><li><p><code>colou?r</code> 可以匹配 <strong><code>color</code></strong> 或者 <strong><code>colour</code></strong>，? 问号代表前面的字符最多只可以出现一次（0次或1次）。</p></li><li><h4 id="普通字符"><a href="#普通字符" class="headerlink" title="普通字符"></a>普通字符</h4><ul><li><p><code>[ABC]</code>: 匹配 […] 中的所有字符，例如 <code>[aeiou]</code> 匹配字符串 “<code>google runoob taobao</code>“ 中所有的 e o u a 字母。</p></li><li><p><code>[^ABC]</code>: 匹配除了 […] 中字符的所有字符，例如<code>[^aeiou]</code>匹配字符串 “<code>google runoob taobao</code>“ 中除了 e o u a 字母的所有字母。</p></li><li><p><code>[A-Z]</code>: <code>[A-Z]</code> 表示一个区间，匹配所有大写字母，[a-z] 表示所有小写字母。</p></li><li><p><code>.</code>: 匹配除换行符（\n、\r）之外的任何单个字符，相等于 <code>[^\n\r]</code>。</p></li><li><p><code>[\s\S]</code>: 匹配所有。\s 是匹配所有空白符，包括换行，\S 非空白符，不包括换行。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;google runoob taobao\nRUnoob\ntaobao&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt1 = <span class="regexp">/[\s\S]/g</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt1));</span><br></pre></td></tr></table></figure><p>结果：<code>g,o,o,g,l,e, ,r,u,n,o,o,b, ,t,a,o,b,a,o, ,R,U,n,o,o,b, ,t,a,o,b,a,o</code></p></li><li><p><code>[\w]</code>: 匹配字母、数字、下划线。等价于 <code>[A-Za-z0-9_]</code> </p></li></ul></li><li><h4 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h4><ul><li>所谓特殊字符，就是一些有特殊含义的字符，如上面说的 <code>runoo*b</code> 中的 <em>，简单的说就是表示任何字符串的意思。如果要查找字符串中的 </em> 符号，则需要对 <em> 进行转义，即在其前加一个 \，`runo\</em>ob<code>匹配字符串 **</code>runo*ob`**。</li></ul></li><li><h4 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h4><p>| <em>     | 匹配前面的子表达式零次或多次。例如，`zo</em><code>能匹配 &quot;z&quot; 以及 &quot;zoo&quot;。* 等价于&#123;0,&#125;。 || ----- | :----------------------------------------------------------: || +     | 匹配前面的子表达式一次或多次。例如，</code>‘zo+’<code>能匹配</code>“zo<code>&quot; 以及</code>“zoo”<code>，但不能匹配 &quot;z&quot;。+ 等价于 &#123;1,&#125;。 || ?     | 匹配前面的子表达式零次或一次。例如，&quot;do(es)?&quot; 可以匹配 &quot;do&quot; 、 &quot;does&quot; 中的 &quot;does&quot; 、 &quot;</code>doxy<code>&quot; 中的 &quot;do&quot; 。? 等价于 &#123;0,1&#125;。 || &#123;n&#125;   | n 是一个非负整数。匹配确定的 n 次。例如，&#39;o&#123;2&#125;&#39; 不能匹配 &quot;Bob&quot; 中的 &#39;o&#39;，但是能匹配 &quot;food&quot; 中的两个 o。 || &#123;n,&#125;  | n 是一个非负整数。至少匹配n 次。例如，&#39;o&#123;2,&#125;&#39; 不能匹配 &quot;Bob&quot; 中的 &#39;o&#39;，但能匹配 &quot;</code>foooood<code>&quot; 中的所有 o。&#39;o&#123;1,&#125;&#39; 等价于 &#39;o+&#39;。&#39;o&#123;0,&#125;&#39; 则等价于 &#39;o*&#39;。 || &#123;n,m&#125; | m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。例如，&quot;o&#123;1,3&#125;&quot; 将匹配 &quot;</code>fooooood`” 中的前三个 o。’o{0,1}’ 等价于 ‘o?’。请注意在逗号和两个数之间不能有空格。 |</p></li></ol><p><code>*</code>和 <code>+</code> 限定符都是贪婪的，因为它们会尽可能多的匹配文字，只有在它们的后面加上一个 <code>?</code> 就可以实现非贪婪或最小匹配.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>RUNOOB-菜鸟教程<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure><ul><li><strong>贪婪</strong>：<code>/&lt;.*&gt;/</code>===&gt;&gt;&gt;匹配所有内容<code>&lt;h1&gt;RUNOOB-菜鸟教程&lt;/h1&gt;</code></li><li><strong>非贪婪</strong>：<code>/&lt;.*?&gt;/</code>===&gt;&gt;&gt;<code>&lt;h1&gt;</code>或者<code>/&lt;\w+?&gt;/</code>===&gt;&gt;&gt;<code>&lt;h1&gt;</code></li><li>通过在 *、+ 或 ? 限定符之后放置 ?，该表达式从”贪婪”表达式转换为”非贪婪”表达式或者最小匹配。</li></ul><ol><li><strong>定位符</strong></li></ol><ul><li>定位符用来描述字符串或单词的边界，^ 和 $ 分别指字符串的开始与结束，\b 描述单词的前或后边界，\B 表示非单词边界。</li><li>下面的表达式匹配单词 Chapter 的开头三个字符，因为这三个字符出现在单词边界后面：<code>/\bCha/</code></li><li>下面的表达式匹配单词 Chapter 中的字符串 <code>ter</code>，因为它出现在单词边界的前面：<code>/ter\b/</code></li><li>下面的表达式匹配 Chapter 中的字符串 apt，但不匹配 aptitude 中的字符串 apt：<code>\Bapt</code></li><li>不匹配 Chapter 中的 <code>Cha</code>：<code>/\Bcha/</code></li></ul><ol><li><p><strong>例子</strong></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;https://www.runoob.com:80/html/html-tutorial.html&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt1 = <span class="regexp">/(\w+):\/\/([^/:]+)(:\d*)?([^# ]*)/</span>;</span><br><span class="line">arr = str.<span class="title function_">match</span>(patt1);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.<span class="property">length</span> ; i++) &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">write</span>(arr[i]);</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&quot;&lt;br&gt;&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>第三行代码 <code>str.match(patt1)</code> 返回一个数组，实例中的数组包含 5 个元素，索引 0 对应的是整个字符串，索引 1 对应第一个匹配符（括号内），以此类推。</li><li>第一个括号子表达式包含 <strong><code>https</code></strong> </li><li>第二个括号子表达式包含 <strong><code>www.runoob.com</code></strong></li><li>第三个括号子表达式包含 <strong>:80</strong> </li><li>第四个括号子表达式包含 <strong><code>/html/html-tutorial.html</code></strong></li></ul></li></ol><h3 id="三-修饰符-pattern-flags"><a href="#三-修饰符-pattern-flags" class="headerlink" title="三. 修饰符 /pattern/flags"></a>三. 修饰符 <code>/pattern/flags</code></h3><div class="table-container"><table><thead><tr><th>i</th><th>ignore - 不区分大小写</th><th style="text-align:left">将匹配设置为不区分大小写，搜索时不区分大小写: A 和 a 没有区别。</th></tr></thead><tbody><tr><td>g</td><td>global - 全局匹配</td><td style="text-align:left">查找所有的匹配项。</td></tr><tr><td>m</td><td>multi line - 多行匹配</td><td style="text-align:left">使边界字符 ^ 和 $ 匹配每一行的开头和结尾，记住是多行，而不是整个字符串的开头和结尾。</td></tr><tr><td>s</td><td>特殊字符圆点 . 中包含换行符 \n</td><td style="text-align:left">默认情况下的圆点 . 是匹配除换行符 \n 之外的任何字符，加上 s 修饰符之后, . 中包含换行符 \n。</td></tr></tbody></table></div><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;Google runoob taobao runoob&quot;</span>; </span><br><span class="line"><span class="keyword">var</span> n1=str.<span class="title function_">match</span>(<span class="regexp">/runoob/</span>);   <span class="comment">// 查找第一次匹配项 runoob</span></span><br><span class="line"><span class="keyword">var</span> n2=str.<span class="title function_">match</span>(<span class="regexp">/runoob/g</span>);  <span class="comment">// 查找所有匹配项 runoob,runoob</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;Google runoob taobao RUNoob&quot;</span>; </span><br><span class="line"><span class="keyword">var</span> n1=str.<span class="title function_">match</span>(<span class="regexp">/runoob/g</span>);   <span class="comment">// 区分大小写 runoob</span></span><br><span class="line"><span class="keyword">var</span> n2=str.<span class="title function_">match</span>(<span class="regexp">/runoob/gi</span>);  <span class="comment">// 不区分大小写 runoob,RUNoob</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;runoobgoogle\ntaobao\nrunoobweibo&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n1=str.<span class="title function_">match</span>(<span class="regexp">/^runoob/g</span>);   <span class="comment">// 匹配一个 runoob</span></span><br><span class="line"><span class="keyword">var</span> n2=str.<span class="title function_">match</span>(<span class="regexp">/^runoob/gm</span>);  <span class="comment">// 多行匹配 runoob,runoob</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;google\nrunoob\ntaobao&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n1=str.<span class="title function_">match</span>(<span class="regexp">/google./</span>);   <span class="comment">// 没有使用 s，无法匹配\n. </span></span><br><span class="line"><span class="keyword">var</span> n2=str.<span class="title function_">match</span>(<span class="regexp">/runoob./</span>s);  <span class="comment">// 使用 s，匹配\n. runoob</span></span><br></pre></td></tr></table></figure><p><strong>匹配邮箱</strong></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;abcd 112306@qq.com 1234&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt1 = <span class="regexp">/\b[\w.%+-]+@[\w.-]+\.[a-zA-Z]&#123;2,6&#125;\b/g</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt1)); <span class="comment">//112306@qq.com</span></span><br></pre></td></tr></table></figure><h3 id="四-实例"><a href="#四-实例" class="headerlink" title="四. 实例"></a>四. 实例</h3><p>ONE:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;abc123-_def&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt = <span class="regexp">/[a-zA-Z0-9_-]+/</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt));<span class="comment">//abc123-_def</span></span><br></pre></td></tr></table></figure><p>TWO:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;abc123def&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> str2 = <span class="string">&quot;abc123_def&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt = <span class="regexp">/[a-zA-Z0-9_]+/</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt));<span class="comment">//abc123def</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str2.<span class="title function_">match</span>(patt));<span class="comment">//abc123_def</span></span><br></pre></td></tr></table></figure><p>THREE: 匹配所有 <code>img</code> 标签：</p><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">&lt;</span>img.<span class="operator">*</span><span class="operator">?</span>src<span class="operator">=</span><span class="string">&quot;(.*?)&quot;</span>.<span class="operator">*</span><span class="operator">?</span><span class="punctuation">\</span><span class="operator">/</span><span class="operator">?</span><span class="operator">&gt;</span><span class="operator">/</span>gi</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/lqs-blog/picgo/main/img/20220715194304.jpg" alt="2" style="zoom:50%;" /></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="一-简介-happy">一. 简介:happy:</h3><ol><li><p>? 通配符匹配文件名中的 0 个或 1 个字符，而 * 通配符匹配零个或多个字符。</p></li><li><p>正则表达式在线测试工具：(<a href="https://c.runoob.com/front-end/854/">https://c.runoob.com/front-end/854/</a>)</p></li><li><p>例子：像 <code>data(\w)?\.dat</code> 这样的模式将查找下列文件：</p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data.dat</span><br><span class="line">data1.dat</span><br><span class="line">data2.dat</span><br><span class="line">datax.dat</span><br><span class="line">dataN.dat</span><br></pre></td></tr></table></figure></li><li><p><img src="https://raw.githubusercontent.com/lqs-blog/picgo/main/img/20220715155152.png" alt="image-20220715155152077"></p><ul><li><code>^</code> 为匹配输入字符串的开始位置。</li><li><code>[0-9]+</code>匹配多个数字， <code>[0-9]</code> 匹配单个数字，<code>+</code> 匹配一个或者多个。</li><li><code>abc$</code>匹配字母 <code>abc</code> 并以 <code>abc</code> 结尾，<code>$</code> 为匹配输入字符串的结束位置。</li></ul></li><li><p>例子①：我们在写用户注册表单时，只允许用户名包含字符、数字、下划线和连接字符 -，并设置用户名的长度，我们就可以使用以下正则表达式来设定。（<code>^[a-z0-9_-]&#123;3,20&#125;$</code>）</p><img src="https://raw.githubusercontent.com/lqs-blog/picgo/main/img/20220715160155.png" alt="image-20220715160155236" style="zoom: 50%;" /></li><li><p>例子②</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;123abc&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt1 = <span class="regexp">/^[0-9]+abc$/</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt1));</span><br></pre></td></tr></table></figure><p>匹配结果是：<code>123.abc</code></p></li></ol><h3 id="二-语法">二. 语法</h3><ol><li><p>正则表达式(regular expression)描述了一种字符串匹配的模式（pattern），可以用来检查一个串是否含有某种子串、将匹配的子串替换或者从某个串中取出符合某个条件的子串等。</p></li><li><p><code>runoo+b</code>，可以匹配 <strong><code>runoob</code>、<code>runooob</code>、<code>runoooooob</code></strong> 等，+ 号代表前面的字符必须至少出现一次（1次或多次）。</p></li><li><p><code>runoo*b</code>，可以匹配 <strong><code>runob</code>、<code>runoob</code>、<code>runoooooob</code></strong> 等，* 号代表前面的字符可以不出现，也可以出现一次或者多次（0次、或1次、或多次）。</p></li><li><p><code>colou?r</code> 可以匹配 <strong><code>color</code></strong> 或者 <strong><code>colour</code></strong>，? 问号代表前面的字符最多只可以出现一次（0次或1次）。</p></li><li><h4 id="普通字符">普通字符</h4><ul><li><p><code>[ABC]</code>: 匹配 […] 中的所有字符，例如 <code>[aeiou]</code> 匹配字符串 “<code>google runoob taobao</code>” 中所有的 e o u a 字母。</p></li><li><p><code>[^ABC]</code>: 匹配除了 […] 中字符的所有字符，例如<code>[^aeiou]</code>匹配字符串 “<code>google runoob taobao</code>” 中除了 e o u a 字母的所有字母。</p></li><li><p><code>[A-Z]</code>: <code>[A-Z]</code> 表示一个区间，匹配所有大写字母，[a-z] 表示所有小写字母。</p></li><li><p><code>.</code>: 匹配除换行符（\n、\r）之外的任何单个字符，相等于 <code>[^\n\r]</code>。</p></li><li><p><code>[\s\S]</code>: 匹配所有。\s 是匹配所有空白符，包括换行，\S 非空白符，不包括换行。</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;google runoob taobao\nRUnoob\ntaobao&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt1 = <span class="regexp">/[\s\S]/g</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt1));</span><br></pre></td></tr></table></figure><p>结果：<code>g,o,o,g,l,e, ,r,u,n,o,o,b, ,t,a,o,b,a,o, ,R,U,n,o,o,b, ,t,a,o,b,a,o</code></p></li><li><p><code>[\w]</code>: 匹配字母、数字、下划线。等价于 <code>[A-Za-z0-9_]</code></p></li></ul></li><li><h4 id="特殊字符">特殊字符</h4><ul><li>所谓特殊字符，就是一些有特殊含义的字符，如上面说的 <code>runoo*b</code> 中的 *，简单的说就是表示任何字符串的意思。如果要查找字符串中的 * 符号，则需要对 * 进行转义，即在其前加一个 \，<code>runo\*ob</code> 匹配字符串 <strong><code>runo\*ob</code></strong>。</li></ul></li><li><h4 id="限定符">限定符</h4><table><thead><tr><th>*</th><th style="text-align:center">匹配前面的子表达式零次或多次。例如，<code>zo*</code> 能匹配 “z” 以及 “zoo”。* 等价于{0,}。</th></tr></thead><tbody><tr><td>+</td><td style="text-align:center">匹配前面的子表达式一次或多次。例如，<code>'zo+'</code> 能匹配 <code>&quot;zo</code>&quot; 以及 <code>&quot;zoo&quot;</code>，但不能匹配 “z”。+ 等价于 {1,}。</td></tr><tr><td>?</td><td style="text-align:center">匹配前面的子表达式零次或一次。例如，“do(es)?” 可以匹配 “do” 、 “does” 中的 “does” 、 “<code>doxy</code>” 中的 “do” 。? 等价于 {0,1}。</td></tr><tr><td>{n}</td><td style="text-align:center">n 是一个非负整数。匹配确定的 n 次。例如，‘o{2}’ 不能匹配 “Bob” 中的 ‘o’，但是能匹配 “food” 中的两个 o。</td></tr><tr><td>{n,}</td><td style="text-align:center">n 是一个非负整数。至少匹配n 次。例如，‘o{2,}’ 不能匹配 “Bob” 中的 ‘o’，但能匹配 “<code>foooood</code>” 中的所有 o。‘o{1,}’ 等价于 ‘o+’。‘o{0,}’ 则等价于 ‘o*’。</td></tr><tr><td>{n,m}</td><td style="text-align:center">m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。例如，“o{1,3}” 将匹配 “<code>fooooood</code>” 中的前三个 o。‘o{0,1}’ 等价于 ‘o?’。请注意在逗号和两个数之间不能有空格。</td></tr></tbody></table></li></ol><p><code>*</code>和 <code>+</code> 限定符都是贪婪的，因为它们会尽可能多的匹配文字，只有在它们的后面加上一个 <code>?</code> 就可以实现非贪婪或最小匹配.</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>RUNOOB-菜鸟教程<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br></pre></td></tr></table></figure><ul><li><strong>贪婪</strong>：<code>/&lt;.*&gt;/</code>===&gt;&gt;&gt;匹配所有内容<code>&lt;h1&gt;RUNOOB-菜鸟教程&lt;/h1&gt;</code></li><li><strong>非贪婪</strong>：<code>/&lt;.*?&gt;/</code>===&gt;&gt;&gt;<code>&lt;h1&gt;</code>或者<code>/&lt;\w+?&gt;/</code>===&gt;&gt;&gt;<code>&lt;h1&gt;</code></li><li>通过在 *、+ 或 ? 限定符之后放置 ?，该表达式从&quot;贪婪&quot;表达式转换为&quot;非贪婪&quot;表达式或者最小匹配。</li></ul><ol start="8"><li><strong>定位符</strong></li></ol><ul><li>定位符用来描述字符串或单词的边界，^ 和 $ 分别指字符串的开始与结束，\b 描述单词的前或后边界，\B 表示非单词边界。</li><li>下面的表达式匹配单词 Chapter 的开头三个字符，因为这三个字符出现在单词边界后面：<code>/\bCha/</code></li><li>下面的表达式匹配单词 Chapter 中的字符串 <code>ter</code>，因为它出现在单词边界的前面：<code>/ter\b/</code></li><li>下面的表达式匹配 Chapter 中的字符串 apt，但不匹配 aptitude 中的字符串 apt：<code>\Bapt</code></li><li>不匹配 Chapter 中的 <code>Cha</code>：<code>/\Bcha/</code></li></ul><ol start="9"><li><p><strong>例子</strong></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;https://www.runoob.com:80/html/html-tutorial.html&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt1 = <span class="regexp">/(\w+):\/\/([^/:]+)(:\d*)?([^# ]*)/</span>;</span><br><span class="line">arr = str.<span class="title function_">match</span>(patt1);</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.<span class="property">length</span> ; i++) &#123;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">write</span>(arr[i]);</span><br><span class="line">    <span class="variable language_">document</span>.<span class="title function_">write</span>(<span class="string">&quot;&lt;br&gt;&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>第三行代码 <code>str.match(patt1)</code> 返回一个数组，实例中的数组包含 5 个元素，索引 0 对应的是整个字符串，索引 1 对应第一个匹配符（括号内），以此类推。</li><li>第一个括号子表达式包含 <strong><code>https</code></strong></li><li>第二个括号子表达式包含 <strong><code>www.runoob.com</code></strong></li><li>第三个括号子表达式包含 <strong>:80</strong></li><li>第四个括号子表达式包含 <strong><code>/html/html-tutorial.html</code></strong></li></ul></li></ol><h3 id="三-修饰符-pattern-flags">三. 修饰符 <code>/pattern/flags</code></h3><table><thead><tr><th>i</th><th>ignore - 不区分大小写</th><th style="text-align:left">将匹配设置为不区分大小写，搜索时不区分大小写: A 和 a 没有区别。</th></tr></thead><tbody><tr><td>g</td><td>global - 全局匹配</td><td style="text-align:left">查找所有的匹配项。</td></tr><tr><td>m</td><td>multi line - 多行匹配</td><td style="text-align:left">使边界字符 ^ 和 $ 匹配每一行的开头和结尾，记住是多行，而不是整个字符串的开头和结尾。</td></tr><tr><td>s</td><td>特殊字符圆点 . 中包含换行符 \n</td><td style="text-align:left">默认情况下的圆点 . 是匹配除换行符 \n 之外的任何字符，加上 s 修饰符之后, . 中包含换行符 \n。</td></tr></tbody></table><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;Google runoob taobao runoob&quot;</span>; </span><br><span class="line"><span class="keyword">var</span> n1=str.<span class="title function_">match</span>(<span class="regexp">/runoob/</span>);   <span class="comment">// 查找第一次匹配项 runoob</span></span><br><span class="line"><span class="keyword">var</span> n2=str.<span class="title function_">match</span>(<span class="regexp">/runoob/g</span>);  <span class="comment">// 查找所有匹配项 runoob,runoob</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;Google runoob taobao RUNoob&quot;</span>; </span><br><span class="line"><span class="keyword">var</span> n1=str.<span class="title function_">match</span>(<span class="regexp">/runoob/g</span>);   <span class="comment">// 区分大小写 runoob</span></span><br><span class="line"><span class="keyword">var</span> n2=str.<span class="title function_">match</span>(<span class="regexp">/runoob/gi</span>);  <span class="comment">// 不区分大小写 runoob,RUNoob</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;runoobgoogle\ntaobao\nrunoobweibo&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n1=str.<span class="title function_">match</span>(<span class="regexp">/^runoob/g</span>);   <span class="comment">// 匹配一个 runoob</span></span><br><span class="line"><span class="keyword">var</span> n2=str.<span class="title function_">match</span>(<span class="regexp">/^runoob/gm</span>);  <span class="comment">// 多行匹配 runoob,runoob</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str=<span class="string">&quot;google\nrunoob\ntaobao&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> n1=str.<span class="title function_">match</span>(<span class="regexp">/google./</span>);   <span class="comment">// 没有使用 s，无法匹配\n. </span></span><br><span class="line"><span class="keyword">var</span> n2=str.<span class="title function_">match</span>(<span class="regexp">/runoob./</span>s);  <span class="comment">// 使用 s，匹配\n. runoob</span></span><br></pre></td></tr></table></figure><p><strong>匹配邮箱</strong></p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;abcd 112306@qq.com 1234&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt1 = <span class="regexp">/\b[\w.%+-]+@[\w.-]+\.[a-zA-Z]&#123;2,6&#125;\b/g</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt1)); <span class="comment">//112306@qq.com</span></span><br></pre></td></tr></table></figure><h3 id="四-实例">四. 实例</h3><p>ONE:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;abc123-_def&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt = <span class="regexp">/[a-zA-Z0-9_-]+/</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt));<span class="comment">//abc123-_def</span></span><br></pre></td></tr></table></figure><p>TWO:</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;abc123def&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> str2 = <span class="string">&quot;abc123_def&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> patt = <span class="regexp">/[a-zA-Z0-9_]+/</span>;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str.<span class="title function_">match</span>(patt));<span class="comment">//abc123def</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>(str2.<span class="title function_">match</span>(patt));<span class="comment">//abc123_def</span></span><br></pre></td></tr></table></figure><p>THREE: 匹配所有 <code>img</code> 标签：</p><figure class="highlight r"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="operator">/</span><span class="operator">&lt;</span>img.<span class="operator">*</span><span class="operator">?</span>src<span class="operator">=</span><span class="string">&quot;(.*?)&quot;</span>.<span class="operator">*</span><span class="operator">?</span><span class="punctuation">\</span><span class="operator">/</span><span class="operator">?</span><span class="operator">&gt;</span><span class="operator">/</span>gi</span><br></pre></td></tr></table></figure><img src="https://raw.githubusercontent.com/lqs-blog/picgo/main/img/20220715194304.jpg" alt="2" style="zoom:50%;" />]]></content>
     
     
       
       
-    <summary type="html">&lt;h3 id=&quot;一-简介-happy&quot;&gt;&lt;a href=&quot;#一-简介-happy&quot; class=&quot;headerlink&quot; title=&quot;一. 简介:happy:&quot;&gt;&lt;/a&gt;一. 简介:happy:&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;? 通配符匹配文件名中的 0 个或 1 个字符，而</summary>
+    <summary type="html">&lt;h3 id=&quot;一-简介-happy&quot;&gt;一. 简介:happy:&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;? 通配符匹配文件名中的 0 个或 1 个字符，而 * 通配符匹配零个或多个字符。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正则表达式在线测试工具：(&lt;a href=&quot;https:/</summary>
       
     
     
@@ -65,8 +70,8 @@
   
   <entry>
     <title>怎么实现对登录用户访问权限的拦截</title>
-    <link href="https://www.fomal.cc/posts/9a421b.html"/>
-    <id>https://www.fomal.cc/posts/9a421b.html</id>
+    <link href="https://www.coderyeah.website/posts/9a421b.html"/>
+    <id>https://www.coderyeah.website/posts/9a421b.html</id>
     <published>2025-05-20T08:38:30.651Z</published>
     <updated>2025-05-20T08:50:31.317Z</updated>
     
@@ -86,8 +91,8 @@
   
   <entry>
     <title>在maven中使用RocketMQ发布消息和消费消息</title>
-    <link href="https://www.fomal.cc/posts/75f7075c.html"/>
-    <id>https://www.fomal.cc/posts/75f7075c.html</id>
+    <link href="https://www.coderyeah.website/posts/75f7075c.html"/>
+    <id>https://www.coderyeah.website/posts/75f7075c.html</id>
     <published>2025-05-20T08:38:30.648Z</published>
     <updated>2025-05-20T08:50:31.297Z</updated>
     
@@ -108,8 +113,8 @@
   
   <entry>
     <title>用java比较两个二叉搜索树是否等价</title>
-    <link href="https://www.fomal.cc/posts/c73d9d2.html"/>
-    <id>https://www.fomal.cc/posts/c73d9d2.html</id>
+    <link href="https://www.coderyeah.website/posts/c73d9d2.html"/>
+    <id>https://www.coderyeah.website/posts/c73d9d2.html</id>
     <published>2025-05-20T08:38:30.644Z</published>
     <updated>2025-05-20T08:50:31.324Z</updated>
     
@@ -130,8 +135,8 @@
   
   <entry>
     <title>一篇带你了解什么是事务及其原理</title>
-    <link href="https://www.fomal.cc/posts/9447ebf6.html"/>
-    <id>https://www.fomal.cc/posts/9447ebf6.html</id>
+    <link href="https://www.coderyeah.website/posts/9447ebf6.html"/>
+    <id>https://www.coderyeah.website/posts/9447ebf6.html</id>
     <published>2025-05-20T08:38:30.641Z</published>
     <updated>2025-05-20T08:50:31.279Z</updated>
     
@@ -151,8 +156,8 @@
   
   <entry>
     <title>图形验证码的使用详情</title>
-    <link href="https://www.fomal.cc/posts/a48e7149.html"/>
-    <id>https://www.fomal.cc/posts/a48e7149.html</id>
+    <link href="https://www.coderyeah.website/posts/a48e7149.html"/>
+    <id>https://www.coderyeah.website/posts/a48e7149.html</id>
     <published>2025-05-20T08:38:30.637Z</published>
     <updated>2025-05-20T08:50:31.295Z</updated>
     
@@ -173,8 +178,8 @@
   
   <entry>
     <title>使用vue的富文本编辑器操作</title>
-    <link href="https://www.fomal.cc/posts/e714b79f.html"/>
-    <id>https://www.fomal.cc/posts/e714b79f.html</id>
+    <link href="https://www.coderyeah.website/posts/e714b79f.html"/>
+    <id>https://www.coderyeah.website/posts/e714b79f.html</id>
     <published>2025-05-20T08:38:30.633Z</published>
     <updated>2025-05-20T08:50:31.284Z</updated>
     
@@ -185,17 +190,17 @@
     
     
     
-    <category term="vue" scheme="https://www.fomal.cc/categories/vue/"/>
+    <category term="vue" scheme="https://www.coderyeah.website/categories/vue/"/>
     
     
-    <category term="vue" scheme="https://www.fomal.cc/tags/vue/"/>
+    <category term="vue" scheme="https://www.coderyeah.website/tags/vue/"/>
     
   </entry>
   
   <entry>
     <title>使用SpringBoot的定时任务发布秒杀活动到redis</title>
-    <link href="https://www.fomal.cc/posts/56884dd3.html"/>
-    <id>https://www.fomal.cc/posts/56884dd3.html</id>
+    <link href="https://www.coderyeah.website/posts/56884dd3.html"/>
+    <id>https://www.coderyeah.website/posts/56884dd3.html</id>
     <published>2025-05-20T08:38:30.630Z</published>
     <updated>2025-05-20T08:50:31.281Z</updated>
     
@@ -215,8 +220,8 @@
   
   <entry>
     <title>使用Minio存储文件对象</title>
-    <link href="https://www.fomal.cc/posts/f71a6512.html"/>
-    <id>https://www.fomal.cc/posts/f71a6512.html</id>
+    <link href="https://www.coderyeah.website/posts/f71a6512.html"/>
+    <id>https://www.coderyeah.website/posts/f71a6512.html</id>
     <published>2025-05-20T08:38:30.627Z</published>
     <updated>2025-05-20T08:50:31.282Z</updated>
     
@@ -236,8 +241,8 @@
   
   <entry>
     <title>生成订单编号的工具类</title>
-    <link href="https://www.fomal.cc/posts/3f7f57de.html"/>
-    <id>https://www.fomal.cc/posts/3f7f57de.html</id>
+    <link href="https://www.coderyeah.website/posts/3f7f57de.html"/>
+    <id>https://www.coderyeah.website/posts/3f7f57de.html</id>
     <published>2025-05-20T08:38:30.623Z</published>
     <updated>2025-05-20T08:50:31.319Z</updated>
     
@@ -253,14 +258,14 @@
     
     
     
-    <category term="java" scheme="https://www.fomal.cc/tags/java/"/>
+    <category term="java" scheme="https://www.coderyeah.website/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>设计一个上下拖动分割窗口</title>
-    <link href="https://www.fomal.cc/posts/d78d2689.html"/>
-    <id>https://www.fomal.cc/posts/d78d2689.html</id>
+    <link href="https://www.coderyeah.website/posts/d78d2689.html"/>
+    <id>https://www.coderyeah.website/posts/d78d2689.html</id>
     <published>2025-05-20T08:38:30.620Z</published>
     <updated>2025-05-20T08:50:31.334Z</updated>
     
@@ -280,8 +285,8 @@
   
   <entry>
     <title>设计模式之适配器模式</title>
-    <link href="https://www.fomal.cc/posts/796a0e79.html"/>
-    <id>https://www.fomal.cc/posts/796a0e79.html</id>
+    <link href="https://www.coderyeah.website/posts/796a0e79.html"/>
+    <id>https://www.coderyeah.website/posts/796a0e79.html</id>
     <published>2025-05-20T08:38:30.616Z</published>
     <updated>2025-05-20T08:50:31.342Z</updated>
     
@@ -303,8 +308,8 @@
   
   <entry>
     <title>设计模式之建造者模式</title>
-    <link href="https://www.fomal.cc/posts/722e57af.html"/>
-    <id>https://www.fomal.cc/posts/722e57af.html</id>
+    <link href="https://www.coderyeah.website/posts/722e57af.html"/>
+    <id>https://www.coderyeah.website/posts/722e57af.html</id>
     <published>2025-05-20T08:38:30.613Z</published>
     <updated>2025-05-20T08:50:31.337Z</updated>
     
@@ -324,8 +329,8 @@
   
   <entry>
     <title>设计模式之简单工厂模式</title>
-    <link href="https://www.fomal.cc/posts/eeb5bd44.html"/>
-    <id>https://www.fomal.cc/posts/eeb5bd44.html</id>
+    <link href="https://www.coderyeah.website/posts/eeb5bd44.html"/>
+    <id>https://www.coderyeah.website/posts/eeb5bd44.html</id>
     <published>2025-05-20T08:38:30.609Z</published>
     <updated>2025-05-20T08:50:31.341Z</updated>
     
@@ -345,8 +350,8 @@
   
   <entry>
     <title>设计模式之工厂方法模式</title>
-    <link href="https://www.fomal.cc/posts/cdd7d3fd.html"/>
-    <id>https://www.fomal.cc/posts/cdd7d3fd.html</id>
+    <link href="https://www.coderyeah.website/posts/cdd7d3fd.html"/>
+    <id>https://www.coderyeah.website/posts/cdd7d3fd.html</id>
     <published>2025-05-20T08:38:30.606Z</published>
     <updated>2025-05-20T08:50:31.332Z</updated>
     
@@ -366,8 +371,8 @@
   
   <entry>
     <title>设计模式之单例模式</title>
-    <link href="https://www.fomal.cc/posts/1a4b62fe.html"/>
-    <id>https://www.fomal.cc/posts/1a4b62fe.html</id>
+    <link href="https://www.coderyeah.website/posts/1a4b62fe.html"/>
+    <id>https://www.coderyeah.website/posts/1a4b62fe.html</id>
     <published>2025-05-20T08:38:30.601Z</published>
     <updated>2025-05-20T08:50:31.330Z</updated>
     
@@ -387,8 +392,8 @@
   
   <entry>
     <title>设计模式之抽象工厂模式</title>
-    <link href="https://www.fomal.cc/posts/1ef33906.html"/>
-    <id>https://www.fomal.cc/posts/1ef33906.html</id>
+    <link href="https://www.coderyeah.website/posts/1ef33906.html"/>
+    <id>https://www.coderyeah.website/posts/1ef33906.html</id>
     <published>2025-05-20T08:38:30.598Z</published>
     <updated>2025-05-20T08:50:31.338Z</updated>
     
@@ -410,8 +415,8 @@
   
   <entry>
     <title>如何在项目中使用百度地图API进行地理位置选择？</title>
-    <link href="https://www.fomal.cc/posts/5d0387a1.html"/>
-    <id>https://www.fomal.cc/posts/5d0387a1.html</id>
+    <link href="https://www.coderyeah.website/posts/5d0387a1.html"/>
+    <id>https://www.coderyeah.website/posts/5d0387a1.html</id>
     <published>2025-05-20T08:38:30.594Z</published>
     <updated>2025-05-20T08:50:31.307Z</updated>
     
@@ -433,8 +438,8 @@
   
   <entry>
     <title>如何使用短信验证码完成注册功能</title>
-    <link href="https://www.fomal.cc/posts/d57e0a92.html"/>
-    <id>https://www.fomal.cc/posts/d57e0a92.html</id>
+    <link href="https://www.coderyeah.website/posts/d57e0a92.html"/>
+    <id>https://www.coderyeah.website/posts/d57e0a92.html</id>
     <published>2025-05-20T08:38:30.590Z</published>
     <updated>2025-05-20T08:50:31.309Z</updated>
     

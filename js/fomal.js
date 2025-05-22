@@ -1113,7 +1113,7 @@ function changeMouseMode() {
 var now1 = new Date();
 
 function createtime1() {
-  var grt = new Date("20/05/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  var grt = new Date("05/20/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
@@ -1137,7 +1137,7 @@ U /"___|   \/"_ \/ |  _"\ \| ___"|/U |  _"\ u  \ \ / /\| ___"|/U  /"\  u  |'| |'
     "小站已经苟活",
     dnum,
     "天啦!",
-    "©2022 By Fomalhaut",
+    "©2025 By Coderyeah",
   ];
 
   setTimeout(
@@ -2789,11 +2789,11 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
+  var start = new Date("05/20/2025 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("20/05/2025 00:00:00");
+  var grt = new Date("05/20/2025 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -3178,10 +3178,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://pic-bed-906.pages.dev/img/default_cover_143.webp);
+    --darkmode-bg: url(https://pic-bed-906.pages.dev/img/default_cover_138.webp);
+    --mobileday-bg: url(https://pic-bed-906.pages.dev/img/default_cover_127.webp);
+    --mobilenight-bg: url(https://pic-bed-906.pages.dev/img/default_cover_109.webp);
   }`;
 }
 // 切换背景主函数
@@ -3411,7 +3411,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_143.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_143.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_138.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_138.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_127.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_127.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_109.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_109.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_251.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_251.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_42.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_42.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://sourcebucket.s3.bitiful.net/img/default_cover_45.webp)" class="imgbox" onclick="changeBg('url(https://sourcebucket.s3.bitiful.net/img/default_cover_45.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/welt.jpeg)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/welt.jpeg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_143.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_143.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_138.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_138.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_127.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_127.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_109.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_109.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_251.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_251.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_42.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_42.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_45.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_45.webp)')"></a></div>
               </div>
             </details>
 
