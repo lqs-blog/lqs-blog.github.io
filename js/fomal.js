@@ -3178,7 +3178,7 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://pic-bed-906.pages.dev/img/default_cover_143.webp);
+    --default-bg: url(https://pic-bed-906.pages.dev/img/dm2.webp);
     --darkmode-bg: url(https://pic-bed-906.pages.dev/img/default_cover_138.webp);
     --mobileday-bg: url(https://pic-bed-906.pages.dev/img/default_cover_127.webp);
     --mobilenight-bg: url(https://pic-bed-906.pages.dev/img/default_cover_109.webp);
@@ -3194,10 +3194,10 @@ function changeBg(s) {
 // 设置背景属性  default_cover_178.webp (251,42,45,138)
 function setBg(s) { 
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_143.webp);
-    --darkmode-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_138.webp);
-    --mobileday-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_127.webp);
-    --mobilenight-bg: url(https://sourcebucket.s3.bitiful.net/img/default_cover_109.webp);
+    --default-bg: ${s};
+    --darkmode-bg: ${s};
+    --mobileday-bg: ${s};
+    --mobilenight-bg: ${s};
   }`;
 }
 
@@ -3411,7 +3411,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/welt.jpeg)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/welt.jpeg)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_143.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_143.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_138.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_138.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_127.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_127.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_109.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_109.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_251.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_251.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_42.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_42.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/default_cover_45.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/default_cover_45.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/dm1.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/dm1.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/dm13.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/dm13.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/dm4.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/dm4.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/dm5.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/dm5.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/dm6.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/dm6.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/dm15.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/dm15.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/dm2.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/dm2.webp)')"></a><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/dm9.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/dm9.webp)')"></a></div>
               </div>
             </details>
 
