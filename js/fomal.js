@@ -3420,7 +3420,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看风景背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://pic-bed-906.pages.dev/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://pic-bed-906.pages.dev/img/fj1.webp)')"></a></div>
               </div>
             </details>
 
